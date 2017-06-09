@@ -27,7 +27,7 @@ $(document).on("click", "span#note", function() {
     .done(function(data) {
       console.log(data);
       // The title of the article
-      $("#notes").append("<h6>" + data.title + "</h6>");
+      $("#notes").append("<span>Leave a note for...</span></br><h6>" + data.title + "</h6>");
       // Include a new div for saved notes and append note's title and body
       $("#notes").append("<p class='note-header'>Saved note</p>").append("<div id='saved-notes'>");
       var noteTitle = $("<p id='noteTitle' style='font-style: italic; font-weight: medium;'>");
